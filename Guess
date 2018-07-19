@@ -1,0 +1,15 @@
+a = 1
+z = 1000
+y = ''
+x1 = x2 = 0
+print("Guess a number!")
+while True :
+    x1 = (a+z)//2
+    if x1== x2 : x1 = (x1-1)
+    print(x1, "?")
+    y = input('Greater,Less,Equal:')
+    if y == 'Less': z=x1
+    elif y == "Greater": a=x1
+    elif y =="Equal": print("That's " + str(x1)); break
+    else: print("Fail")
+    x2 = x1
